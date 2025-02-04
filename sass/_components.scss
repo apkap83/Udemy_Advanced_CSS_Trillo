@@ -1,4 +1,4 @@
-@use "abstracts" as base;
+@use "abstracts" as abstracts;
 
 ////////////////////////////////////////
 // LOGO
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (max-width: base.$bp-smallest) {
+  @media only screen and (max-width: abstracts.$bp-smallest) {
     order: 1;
     flex: 0 0 100%;
     background-color: var(--color-grey-light-2);
@@ -42,7 +42,7 @@
 
     &::-webkit-input-placeholder {
       font-weight: 100;
-      color: var(--color-grey-light-4);
+      color: var(--color-grey-dark-3);
     }
   }
 
@@ -101,15 +101,15 @@
   }
 
   &__notification {
-    font-size: 0.8rem;
-    height: 1.75rem;
-    width: 1.75rem;
-    border-radius: 50%;
-    background-color: var(--color-primary);
-    color: #fff;
     position: absolute;
     top: 1.5rem;
     right: 1.1rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
 
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@
   list-style: none;
   margin-top: 3.5rem;
 
-  @media only screen and (max-width: base.$bp-medium) {
+  @media only screen and (max-width: abstracts.$bp-medium) {
     display: flex;
     margin: 0;
   }
@@ -141,12 +141,12 @@
     &:not(:last-child) {
       margin-bottom: 0.5rem;
 
-      @media only screen and (max-width: base.$bp-medium) {
+      @media only screen and (max-width: abstracts.$bp-medium) {
         margin: 0;
       }
     }
 
-    @media only screen and (max-width: base.$bp-medium) {
+    @media only screen and (max-width: abstracts.$bp-medium) {
       flex: 1;
     }
   }
@@ -179,7 +179,7 @@
     color: var(--color-grey-light-1);
     text-decoration: none;
     text-transform: uppercase;
-    display: block;
+    // display: block;
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 10;
@@ -187,12 +187,12 @@
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: base.$bp-medium) {
+    @media only screen and (max-width: abstracts.$bp-medium) {
       justify-content: center;
       padding: 2rem;
     }
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       flex-direction: column;
       padding: 1.5rem 0.5rem;
     }
@@ -204,7 +204,7 @@
     margin-right: 2rem;
     fill: currentColor;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       margin-right: 0;
       margin-bottom: 0.7rem;
       width: 1.5rem;
@@ -221,7 +221,7 @@
   text-align: center;
   padding: 2.5rem;
 
-  @media only screen and (max-width: base.$bp-medium) {
+  @media only screen and (max-width: abstracts.$bp-medium) {
     display: none;
   }
 }
@@ -251,7 +251,7 @@
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
@@ -272,7 +272,6 @@
   &__location {
     font-size: 1.2rem;
     display: flex;
-    vertical-align: center;
   }
 
   &__icon-location {
@@ -291,7 +290,7 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       padding: 0 1.5rem;
     }
   }
@@ -301,7 +300,7 @@
     font-weight: 300;
     margin-bottom: -3px;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       font-size: 1.8rem;
     }
   }
@@ -310,7 +309,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: abstracts.$bp-small) {
       font-size: 0.5rem;
     }
   }
@@ -451,7 +450,7 @@
   position: relative;
   overflow: hidden;
 
-  @media only screen and (max-width: base.$bp-medium) {
+  @media only screen and (max-width: abstracts.$bp-medium) {
     padding: 2rem;
     margin-bottom: 3rem;
   }
@@ -515,7 +514,7 @@
   padding: 3.5rem 0;
   text-align: center;
 
-  @media only screen and (max-width: base.$bp-medium) {
+  @media only screen and (max-width: abstracts.$bp-medium) {
     padding: 2.5rem 0;
   }
 
